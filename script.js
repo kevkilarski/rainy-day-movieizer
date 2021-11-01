@@ -5,12 +5,8 @@ const app = {};
 
 
 // --- API variables ---
-app.weatherKey = 'f844d2c1be592da40800d46afc6f8d14';
 app.weatherURL = 'http://api.openweathermap.org/data/2.5/forecast?';
-
-app.filmKey = '56600465';
 app.filmUrl = 'http://www.omdbapi.com/';
-
 
 
 // --- API promises ---
@@ -20,7 +16,7 @@ app.getWeatherAPI = (city) => {
         method: 'GET',
         dataType: 'JSON',
         data: {
-            appid: app.weatherKey,
+            appid: process.env.WEATHER_API_KEY,
             q: city
         }
     })
@@ -33,7 +29,7 @@ app.getFilmAPI = (title) => {
         method: 'GET',
         dataType: 'JSON',
         data: {
-            apiKey: app.filmKey,
+            apiKey: process.env.FILM_API_KEY,
             t: title
         }
     })
