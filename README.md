@@ -4,3 +4,4 @@ This application uses the OpenWeather API and OMDB API to pair a period of rainy
 
 Created by Kevin Kilarski, while enrolled in the Javascript Accelerated Course at Juno College.
 
+[View it live here!](https://rainy-day-movieizer.netlify.app/)
