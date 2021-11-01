@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainy Day Movie</title>
+    
+    <script src="https://kit.fontawesome.com/1885f9f232.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="wrapper">
+            
+            <section class="header-container">
+                <h1>Rainy Day Movie-izer!</h1>
+            </section>
+
+        </div>
+    </header>
+
+
+    <section class="introduction">
+        <div class="wrapper">
+            <div class="introduction-container">
+
+                <h2>Who doesn't love to watch a good movie on a rainy day?</h2>
+                <h2>Now it's never been easier!</h2>
+                <p class="introduction-text">1. Select your location below. All three-hour chunks with expected rain in the near future will appear.</p>
+                <p class="introduction-text">2. Choose the timeslot that works for you -- late nights included!</p>
+                <p class="introduction-text">3. Our randomizer will find the perfect rainy day movie to watch, cultivated from the top choices of thousands! (courtesy of <a href="https://www.ranker.com/list/best-rainy-day-movies-v1/ranker-film" class="ranker-link">Ranker</a>)</p>
+                <p class="juno-link">Created at <a href="https://junocollege.com/"><strong>Juno College</strong></a></p>
+
+        </div>
+        </div>
+    </section>
+
+    
+    <section class="location">
+        <div class="wrapper">
+            <section class="location-container">
+
+                <h2 class="location-title">Select your Location</h2>
+                <div class="location-button">
+                    <select class="location-select" name="" id="">
+                        <option value="#" selected disabled>Choose your City</option>
+                        <option value="Toronto">Toronto</option>
+                        <option value="Ottawa">Ottawa</option>
+                        <option value="Montreal">Montreal</option>
+                        <option value="Quebec City">Quebec City</option>
+                        <option value="Halifax">Halifax</option>
+                        <option value="Vancouver">Vancouver</option>
+                        <option value="Calgary">Calgary</option>
+                        <option value="Edmonton">Edmonton</option>
+                        <option value="Winnipeg">Winnipeg</option>
+                        <option value="Hamilton">Hamilton</option>
+                    </select>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+
+    <section class="rain-available-group no-display">
+        <div class="wrapper">
+
+            <h2 class="rain-available-title">Select your Movie Time</h2>
+            <section class="rain-available">
+                <!-- Available rain days are generated here -->
+            </section>
+
+        </div>
+    </section>
+
+    <section class="rain-selection-group no-display">
+        <div class="wrapper">
+
+            <section class="rain-selection-column">
+
+                <div class="rain-selection-top">
+                    <h2 class="rain-selection-title" id="rain-selection-title">Pair It with a Rainy Day Movie!</h2>
+                </div>
+                <div class="rain-selection-flex">
+                    <section class="rain-selection">
+                        <!-- Selected rain day is generated here -->
+                    </section>
+                    <section class="button-container">
+                            <button class="film-button no-display">Click For Your Film!</button>
+                    </section>
+                </div>
+
+            </section>
+
+        </div>
+    </section>
+
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

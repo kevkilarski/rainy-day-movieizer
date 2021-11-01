@@ -1,0 +1,384 @@
+html{
+    line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* --- start of CSS here --- */
+
+
+/* --- Global Styles --- */
+
+body,
+ul,
+h1,
+h2,
+h3
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+fieldset {
+    border: 0;
+}
+
+html {
+	font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-image: repeating-linear-gradient(to right, rgb(0, 17, 167), darkblue, rgb(0, 17, 167), darkblue, rgb(0, 17, 167), darkblue, rgb(0, 17, 167), darkblue);
+}
+
+section {
+    padding: 20px 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.wrapper {
+	width: 85%;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+h1 {
+    background: rgba(45, 115, 219, 0.3);
+    border: 3px solid white;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6.0rem;
+    line-height: 1.5;
+    padding: 25px;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    padding: 15px;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+button {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.display {
+    display: inline-block;
+}
+
+.no-display {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+/* --- end of Global Styles */
+
+
+
+/* --- Header --- */
+
+.header-container {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+/* Header Glow */
+@keyframes glow {
+    100% { text-shadow: 0 0 0px #c5c5c5, 0 0 0px #1212ff; }
+}
+
+h1 {
+    text-shadow: 0 0 5px #bec8e2, 0 0 20px #6060ff;
+    animation: glow 0.5s infinite alternate;
+}
+
+/* --- End of Header --- */
+
+
+
+/* --- Introduction --- */
+
+.introduction-container {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid papayawhip;
+    /* background: rgba(42, 133, 194, 0.2); */
+    background-image: repeating-linear-gradient(to right, rgb(0, 17, 167), darkblue);
+    color: rgb(255, 244, 244);
+}
+
+.introduction-container h2:nth-child(1) {
+    padding-bottom: 5px;
+}
+
+.introduction-container h2:nth-child(2) {
+    margin-bottom: 10px;
+    padding-top: 0;
+    text-decoration: underline;
+}
+
+.introduction-text {
+    text-align: left;
+    margin: 5px 75px;
+}
+
+.juno-link {
+    margin: 10px;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.ranker-link {
+    text-decoration: underline;
+}
+
+/* --- End of Introduction --- */
+
+
+/* --- Location --- */
+
+.location-title {
+    text-align: center;
+}
+
+.location-button {
+    display: flex;
+    justify-content: center;
+}
+
+.location-select {
+    background: papayawhip;
+    font-size: 2.0rem;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+/* --- End of Location --- */
+
+
+
+/* --- Rain Available and Selected --- */
+
+.rain-available-title {
+    text-align: center;
+}
+
+.rain-available {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.individualDate {
+    position: relative;
+    height: 180px;
+    width: 150px;
+    background: rgb(0, 0, 109);
+    padding: 0;
+    border: 3px solid black;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+.individualDate h3 {
+    line-height: 1.5;
+    margin: 12px;
+}
+
+.individualDate:hover {
+    background: darkblue;
+    border: 3px solid blueviolet;
+    cursor: pointer;
+}
+
+.rain-cloud { 
+    color: papayawhip;
+    font-size: 7.5rem;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* --- End of Rain Available and Selected --- */
+
+
+
+/* --- Rain Selection --- */
+
+.rain-selection-group {
+    margin-bottom: 50px;
+}
+
+.rain-selection-title {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 0 20px 0;
+    max-height: 160px;
+    font-size: 3.8rem;
+}
+
+.rain-selection-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+}
+
+.rain-selection {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.individualDateSelected {
+    position: relative;
+    height: 300px;
+    width: 250px;
+    background: rgb(0, 0, 109);
+    padding: 0;
+    border: 3px solid black;
+    text-align: center;
+    padding-top: 1%;
+    color: white;
+    margin: 5px;
+}
+
+.individualDateSelected h3 {
+    line-height: 1.5;
+    font-size: 2.2rem;
+    margin: 14px;
+}
+
+.rain-cloud-selected { 
+    color: papayawhip;
+    font-size: 15.0rem;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* --- End of Rain Selection --- */
+
+
+/* --- Film Generator --- */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 610px;
+    justify-content: center;
+    align-items: center;
+}
+
+.film-button {
+    border: none;
+    background: papayawhip;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0rem;
+    cursor: pointer;
+    padding: 2px;
+    margin: 10px;
+    width: 50%;
+}
+
+.film-button:active {
+    background: rgb(206, 192, 172);
+}
+
+.film-title {
+    font-size: 5.5rem;
+    text-align: center;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.rain-selection-column {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    background: linear-gradient(rgba(14, 0, 95, 0.2), rgba(14, 0, 95, 0.5),rgba(14, 0, 95, 0.2), rgba(14, 0, 95, 0.5),rgba(14, 0, 95, 0.2), rgba(14, 0, 95, 0.5));
+}
+
+/* --- End of Film Generator --- */
+
+
+
+/* --- Setting Final Pairing --- */
+
+@keyframes blink {
+    50% { border-color: #40248b; }
+}
+
+.borderCelebration {
+    border: 5px solid rgb(91, 101, 243);
+    animation: blink 1.5s linear infinite alternate;
+}
+
+.film-poster-end {
+    border: 5px solid black;
+}
+
+/* --- End of Setting Final Pairing --- */
