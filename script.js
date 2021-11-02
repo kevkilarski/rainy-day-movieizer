@@ -6,14 +6,13 @@ const app = {};
 
 // --- API variables ---
 app.weatherURL = 'http://api.openweathermap.org/data/2.5/forecast?';
-app.weatherAPI = config.WEATHER_API_KEY;
+app.weatherAPI = `f844d2c1be592da40800d46afc6f8d14`;
 
 app.filmURL = 'http://www.omdbapi.com/';
-app.filmAPI = config.FILM_API_KEY;
+app.filmAPI = `56600465`;
 
 // --- API promises ---
 app.getWeatherAPI = (city) => {
-    console.log(app.filmAPI);
     const weatherPromise = $.ajax({
         url: app.weatherURL,
         method: 'GET',
