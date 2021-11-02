@@ -13,6 +13,7 @@ app.filmAPI = config.FILM_API_KEY;
 
 // --- API promises ---
 app.getWeatherAPI = (city) => {
+    console.log(app.filmAPI);
     const weatherPromise = $.ajax({
         url: app.weatherURL,
         method: 'GET',
