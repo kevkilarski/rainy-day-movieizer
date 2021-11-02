@@ -5,7 +5,7 @@ const app = {};
 
 
 // --- API variables ---
-app.weatherURL = 'http://api.openweathermap.org/data/2.5/forecast?';
+app.weatherURL = 'https://api.openweathermap.org/data/2.5/forecast?';
 app.weatherAPI = `f844d2c1be592da40800d46afc6f8d14`;
 
 app.filmURL = 'http://www.omdbapi.com/';
